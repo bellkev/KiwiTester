@@ -3,6 +3,6 @@ dependencies:
     - brew install cowsay
 test:
   override:
-    - xctool -scheme $XCODE_SCHEME -workspace $XCODE_WORKSPACE -sdk iphonesimulator clean test
+    - xctool -scheme "$XCODE_SCHEME" -workspace "$XCODE_WORKSPACE" -sdk iphonesimulator clean test
   post:
     - cowsay Hi!
